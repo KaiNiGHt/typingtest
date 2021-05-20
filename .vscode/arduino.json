@@ -1,5 +1,0 @@
-{
-    "board": "arduino:avr:uno",
-    "sketch": "arduino\\Python-Arduino-Command-API-master\\Python-Arduino-Command-API-master\\sketches\\prototype\\prototype.ino",
-    "port": "COM3"
-}
