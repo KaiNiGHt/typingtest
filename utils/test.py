@@ -1,4 +1,4 @@
-from time import time
+from time import time, sleep
 from msvcrt import getch, kbhit
 from os import system
 class Test : 
@@ -14,10 +14,10 @@ class Test :
         print(ori)
         print(ans)
         if time() - self.__start > 0 : 
-            print(self.__score / (time() - self.__start))
+            print("타수 / SCORE \t",self.__score / (time() - self.__start) * 60)
     
     def update(self) : 
-        self.__start = time()
+        self.__start = 0
         self.__before = time()
         self.__delta = 0
 
@@ -27,6 +27,9 @@ class Test :
 
             while True : 
                 if kbhit() : 
+                    if self.__start == 0 : 
+                        self.__start = time()
+
                     key = getch()
 
                     if ord(key) == 13 : 
@@ -57,3 +60,18 @@ class Test :
                     self.__delta = 0
                 
                 self.__before = time()
+        score = self.__score / (time() - self.__start) * 60
+        system("cls")
+        print("축하드립니다! 당신은 이 지옥같은 타자연습을 끝냈어요.")
+        print("Congratulations! You're done with this hellish typing practice.")
+        sleep(0.5)
+        print("이걸 끝냈다는것도 놀랍네요.")
+        print("It's amazing that you've finished this.")
+        sleep(0.5)
+        system("cls")
+        print("----------------------------------------------------------------")
+        print("리더보드 / leader board")
+        print("타수     / SCORE  |", score)
+        print("시간     / TIME   |", int(time() - self.__start),'s')
+        print("----------------------------------------------------------------")
+        system("pause")

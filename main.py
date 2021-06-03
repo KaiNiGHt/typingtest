@@ -1,3 +1,3 @@
-from utils import letter
+import mainscreen
 
-letter.Letter('./utils/database/english/resource/letter_1.txt')
+mainscreen.init()
