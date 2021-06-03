@@ -14,7 +14,7 @@ def init() :
     print("쉬운 오픈 소스 영어 타자연습 프로그램")
     print("Easy Open Source English Typing Practice Program")
     time.sleep(0.5)
-    print("version 0.1.0 Ahlpa")
+    print("version 0.1.1 Ahlpa")
     time.sleep(0.5)
     print("GitHub 리포지토리에 기여하여 프로그램을 발전시켜주세요!")
     print("Github : https://github.com/KaiNiGHt/typingtest")

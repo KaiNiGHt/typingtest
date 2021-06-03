@@ -6,7 +6,7 @@ class Letter :
         letters = read.Read(file)
         self.__list = []
 
-        for i in range(5) : 
+        for i in range(50) : 
             self.__list.append(choice(letters.get()))
         
         test.Test(self.__list).update()
