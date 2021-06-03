@@ -1,9 +1,9 @@
-from . import read
+from . import read_
 from . import test
 from random import choice
 class Letter : 
     def __init__(self, file) : 
-        letters = read.Read(file)
+        letters = read_.Read(file)
         self.__list = []
 
         for i in range(50) : 
