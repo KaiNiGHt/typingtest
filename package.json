@@ -1,0 +1,9 @@
+{
+  "name": "TYPINGTEST",
+  "version": "0.1.1",
+  "description": "version 0.1.1 ahlpa",
+  "main": "index.js",
+  "repository": "https://github.com/KaiNiGHt/typingtest.git",
+  "author": "KaiNiGHt <rt.kirby2009@gmail.com>",
+  "license": "MIT"
+}
